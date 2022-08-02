@@ -19,7 +19,7 @@ const MovieForm = ({handleMovieSubmit}) => {
         if (!nameToSubmit || !urlToSubmit){
             return
         }
-        handleMovieSubmit({id:Date.now, name:nameToSubmit, url:urlToSubmit});
+        handleMovieSubmit({id:Date.now(), name:nameToSubmit, url:urlToSubmit});
         setName('');
         setUrl('https://');
     }
